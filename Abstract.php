@@ -4,7 +4,7 @@
  */
 abstract class Profestas_Model_Abstract extends Zend_Db_Table_Abstract
 {
-    // Definindo os atributos da classe
+    // Definindo os atributos da class
     protected $campos;
     
     /**
