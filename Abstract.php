@@ -2,7 +2,7 @@
 /**
  * @author Matheus Rosmaninho <matheusmgrosmaninho@gmail.com>
  */
-abstract class Profestas_Model_Abstract extends Zend_Db_Table_Abstract
+abstract class Application_Model_Abstract extends Zend_Db_Table_Abstract
 {
     // Definindo os atributos da class
     protected $campos;
