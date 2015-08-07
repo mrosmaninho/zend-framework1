@@ -1,10 +1,13 @@
 <?php
 /**
  * @author Matheus Rosmaninho <matheusmgrosmaninho@gmail.com>
+ * @author Carlos Montezano <cmontezanol@gmail.com>
  */
 abstract class Application_Model_Abstract extends Zend_Db_Table_Abstract
 {
-    // Definindo os atributos da class
+    /**
+     * [Definindo os atributos da class]
+     */
     protected $campos;
     
     /**
@@ -29,7 +32,11 @@ abstract class Application_Model_Abstract extends Zend_Db_Table_Abstract
     /**
      * 
      * Funcao responsavel por realizar consulta no banco
-     * @param String $condicao
+     * @param string $condicao
+     * @param string $orden
+     * @param bool $paginacao
+     * @param array/string $campos
+     * 
      * @return array
      */
     public function consultar($condicao = '', $ordem = '', $paginacao = false, $campos = '')
